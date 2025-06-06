@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Burhan Luggage</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Enjoy Free Nationwide Shipping on Orders Over Rs. 5000!</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="/">
+        <img src="images/logo.png" alt="Al Burhan Logo" class="header__logo-image" />
+        <img src="images/logo-white.png" alt="Al Burhan Logo White" class="header__logo-image header__logo-image--transparent" />
+      </a>
+    </div>
+
+    <!-- Primary Nav -->
+    <nav class="header__primary-nav">
+      <button type="button" aria-label="Open menu" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Secondary Nav -->
+    <nav class="header__secondary-nav">
+      <a href="/account/login"><i class="fas fa-user"></i></a>
+      <a href="/search"><i class="fas fa-search"></i></a>
+      <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+
+    <!-- Search -->
+    <div class="header__search">
+      <form action="/search" method="GET">
+        <input type="search" name="q" placeholder="Search for..." />
+        <button type="submit"><i class="fas fa-times"></i></button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu -->
+  <aside class="sidebar-menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/collections/all">All Products</a></li>
+      <li><a href="#">Shop By Category</a></li>
+      <li><a href="#">Shop By Brand</a></li>
+      <li><a href="#">Gift</a></li>
+      <li><a href="/collections/sale">Sale</a></li>
+      <li><a href="/pages/stores">Flagship Store</a></li>
+      <li><a href="/pages/contact-us">Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <!-- Newsletter Popup -->
+  <div class="newsletter-popup">
+    <p class="h4">Signup for our newsletter</p>
+    <form method="post" action="/contact">
+      <input type="email" name="contact[email]" placeholder="E-mail" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <p>🍪 We use cookies to improve your experience. <a href="/policies/privacy-policy">Learn more</a>.</p>
+    <button>Accept</button>
+    <button>Decline</button>
+  </div>
+
+</body>
+<script src="theme.js"></script>
+</html>
